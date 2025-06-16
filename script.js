@@ -44,7 +44,7 @@ $(document).ready(function () {
     elevation: 50,
     cornerSize: 20,
     gradients: true,
-    autoCenter: true,
+    // autoCenter: true,
     display: getDisplayMode()
   });
 
