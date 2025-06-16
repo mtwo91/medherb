@@ -98,7 +98,7 @@
     
         // Size of the active zone of each corner
     
-        cornerSize: 50
+        cornerSize: 200
     
       },
     

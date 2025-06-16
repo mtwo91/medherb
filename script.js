@@ -42,7 +42,7 @@ $(document).ready(function () {
     width: width,
     height: height,
     elevation: 50,
-    cornerSize: 20,
+    cornerSize: 100,
     gradients: true,
     // autoCenter: true,
     display: getDisplayMode()
