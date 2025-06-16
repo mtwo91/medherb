@@ -1386,6 +1386,34 @@
         </div>
      </div>
 
+     <script>
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        const minSwipeDistance = 100;
+        
+        const magazine = document.querySelector('.magazine');
+        
+        magazine.addEventListener('touchstart', function(e) {
+          touchStartX = e.changedTouches[0].screenX;
+        }, false);
+        
+        magazine.addEventListener('touchend', function(e) {
+          touchEndX = e.changedTouches[0].screenX;
+          handleSwipe();
+        }, false);
+        
+        function handleSwipe() {
+          const swipeDistance = touchEndX - touchStartX;
+          if (Math.abs(swipeDistance) > minSwipeDistance) {
+            if (swipeDistance < 0) {
+              $(".magazine").turn("next");
+            } else {
+              $(".magazine").turn("previous");
+            }
+          }
+        }
+    </script>        
     <script src="script.js"></script>
 </body>
 
