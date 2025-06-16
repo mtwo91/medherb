@@ -513,6 +513,7 @@
   }
   .magazine-viewport {
     width: 100vw;
-    height: auto;
+    height: 100vh;
+    overflow: hidden;
   }
 }
