@@ -298,6 +298,7 @@
   height: 100%;
   justify-items: center;
   align-items: center;
+  place-items: center;
 }
 
 .slide-img img {
