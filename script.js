@@ -1,7 +1,7 @@
 /** Powered by turn.js */
 
 function getAspectRatio() {
-  return $(window).width() < 767 ? 210 / 345 : 420 / 297;
+  return $(window).width() < 767 ? 210 / 337 : 420 / 297;
 }
 
 function getDisplayMode() {
