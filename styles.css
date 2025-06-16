@@ -528,4 +528,7 @@
   .magazine-viewport .magazine {
     left: unset;
   }
+  .toc-container {
+    padding: 1rem 3rem;
+  }
 }
