@@ -531,4 +531,7 @@
   .toc-container {
     padding: 1rem 3rem;
   }
+  .slide-img img {
+    width: 90%;
+  }
 }
