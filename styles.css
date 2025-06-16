@@ -301,6 +301,10 @@
   place-items: center;
 }
 
+.slide-img {
+  height: 100vh !important;
+}
+
 .slide-img img {
   height: 80%;
 }
