@@ -516,4 +516,8 @@
     height: 100vh;
     overflow: hidden;
   }
+  .magazine-viewport .container,
+  .magazine-viewport .magazine {
+    left: unset;
+  }
 }
