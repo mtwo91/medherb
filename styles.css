@@ -50,6 +50,7 @@
     font-size: 36px;
     font-weight: 900;
     color: var(--color-main);
+    text-align: center;
   }
 
   h3 {
@@ -325,36 +326,73 @@
   text-align: center;
 }
 
-.address p {
-  text-align: center;
+.section {
+  display: grid;
+  gap: 2px;
 }
 
 .content {
-  display: flex;
+  display: grid;
   font-size: 10px;
-  gap: 10px;
+  gap: 5px;
 }
 
-.images {
-  width: 80%;
+.highlighted-text {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.highlighted-text::before,
+.highlighted-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 1px;
+  background-color: var(--color-main);
+}
+
+.highlighted-text::before {
+  left: 0;
+  transform: translateX(-80%);
+}
+
+.highlighted-text::after {
+  right: 0;
+  transform: translateX(80%);
 }
 
 .info ul {
   line-height: 1;
 }
 
+.images {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  gap: 10px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 100%;
+  max-width: calc(33.33% - 10px);
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .info {
   width: 100%;
-  display: grid;
+  display: flex;
   align-content: space-between;
+  gap: 10px;
 }
 
-.info b {
-  color: var(--color-main);
-}
-
-.address p {
-  padding-bottom: 5px;
+.info ul, .info div {
+  width: 50%;
 }
 
 .img-container {
@@ -494,6 +532,42 @@
   justify-items: center;
   margin-bottom: 5rem;
 }
+
+.table-medherb {
+  font-family: 'Nunito', sans-serif;
+  font-size: 8px;
+  text-align: center;
+  align-items: center;
+  table-layout: fixed;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+.table-medherb tr td:nth-child(1),
+.table-medherb tr td:nth-child(2),
+.table-medherb tr td:nth-child(3),
+.table-medherb tr td:nth-child(5),
+.table-medherb tr td:nth-child(6) {
+  white-space: nowrap;
+}
+
+.table-medherb thead {
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+
+.table-medherb thead th {
+  border: 1px solid var(--color-black);
+}
+
+.table-medherb tbody td {
+  border: 1px solid var(--color-main);
+}
+
+.table-container {
+  padding: 2rem 1rem;
+}
+
 
 /* Responsive */
 @media screen and (max-width: 767px) {
