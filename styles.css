@@ -315,7 +315,7 @@
 .kho-lanh-container {
   display: grid;
   height: 100%;
-  align-content: space-between;
+  align-content: space-around;
   padding: 2rem;
   font-family: 'Nunito', sans-serif;
 }
